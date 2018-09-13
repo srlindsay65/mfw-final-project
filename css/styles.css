@@ -14,7 +14,18 @@
 
 /* OOCSS */
 
+.section-container {
+  margin-top: 250px;
+  margin-bottom: 100px;
+  text-align: center;
+  background: var(--bulldogwhite);
+  border-radius: 20%;
+}
 
+.section-header {
+  font-family: var(--roboto);
+  font-size: 36px;
+}
 
 /* styles */
 
@@ -80,7 +91,7 @@ header {
 }
 
 #story, #review, #menu, #contact {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,13 +101,7 @@ header {
   background: var(--white);
 }
 
-.year {
-  position: absolute;
-  font-family: var(--lobster);
-  font-size: 150px;
-  color: rgba(0, 0, 0, .2);
-  margin: 0;
-}
+
 
 .container-border::before {
   content: '';
@@ -117,54 +122,25 @@ header {
   color: var(--bulldogwhite);
   display: inline-block;
   font-size: 20px;
-  border-radius: 10%;
 
-}
 
-#review {
-  background: url('../img/food_review.jpg');
-  background-size: cover;
-}
-
-.review-info {
-  background: var(--dark-shadow);
-  border-radius: 4px;
-  text-align: center;
-}
-
-.review-header {
-  color: var(--orange);
-  font-family: var(--lobster);
-  text-shadow: var(--dark-shadow);
-  font-size: 70px;
-}
-
-.review-body {
-  color: white;
-  font-size: 20px;
-  font-family: var(--raleway);
 }
 
 #menu {
-  background: url('../img/black_linen.png');
+  background: var(--bulldogred);
 }
 
-.menu-header {
-  font-family: var(--lobster);
-  font-size: 70px;
-  color: var(--white);
-}
 
-/* .menu-border::before {
-  content: '';
-  background: #bada55;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  margin-bottom: 50px;
-  z-index: 50;
-} */
 
 #contact {
-  background: red;
+  background: var(--bulldogred);
+}
+
+
+
+
+
+.contact-list-item {
+  font-family: var(--montserrat);
+  font-size: 20px;
 }

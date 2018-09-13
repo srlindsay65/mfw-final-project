@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bulldog Burger Joint - Blog</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-scroll">
+	<div class="container-fluid">
+		<div id="home" class="row">  <!-- home start-->
+			<header>
+				<div class="logo">
+					<img src="./img/bulldog_logo_sm.jpg" alt="Bulldog Burger Logo">
+				</div>
+				<nav id="navbar-scroll" class="navbar pull-right">
+					<ul class="nav nav-pills" role="tablist">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+
+		</div>  <!-- home end-->
+		<div id="blog" class="row">  <!-- blog start-->
+			<div class="col-md-10 col-md-offset-1 container-border">
+				<h2>The Burger Blog</h2>
+				<div class="col-md-5 col-md-offset-1">
+					<p>My vision for the restaurant is to be a family friendly place to enjoy some good food. There will usually be sports on at least one of the three televisions. If you come more than a couple of times I will probably remember your name. We do have a kid's menu for the little ones, and we can always customize something so that every appetite can be accomodated.</p>
+					<p>--Matias</p>
+				</div>
+				<div class="col-md-5">
+					<p>The opening story in the burger blog is about...burgers. Well, and the restaurant. I bought the restaurant in November 2016 and have been running it with my team since. We only use fresh, locally sourced ingredients, make all of our sauces from scratch, and strive to provide you with the best meal possible. Thanks for visiting and please let me know how I can make your experience even better.</p>
+					<p>--Matias</p>
+				</div>
+				<div class="col-md-10">
+					<a href="#" class="btn btn-default blog-button" role="button">To The Blog</a>
+				</div>
+			</div>
+
+		</div>  <!-- blog end-->
+
+
+
+
+
+	</div>
+	<!-- javascript	 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('body').scrollspy({target: "#navbar-scroll", offset: 50});
+			$(".navbar a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					const hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>

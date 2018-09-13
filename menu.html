@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bulldog Burger Joint - Menu</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-scroll">
+	<div class="container-fluid">
+		<div id="home" class="row">  <!-- home start-->
+			<header>
+				<div class="logo">
+					<img src="./img/bulldog_logo_sm.jpg" alt="Bulldog Burger Logo">
+				</div>
+				<nav id="navbar-scroll" class="navbar pull-right">
+					<ul class="nav nav-pills" role="tablist">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+		<div id="menu" class="row">  <!-- menu start-->
+			<div class="col-md-6 section-container">
+				<div>
+					<h2 class="section-header">Starters</h2>
+					<h2 class="section-header">Salads</h2>
+					<h2 class="section-header">Wraps</h2>
+					<h2 class="section-header">Burgers</h2>
+					<h2 class="section-header">Street Fries</h2>
+				</div>
+
+		</div>  <!-- menu end-->
+
+
+
+
+
+	</div>
+	<!-- javascript	 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('body').scrollspy({target: "#navbar-scroll", offset: 50});
+			$(".navbar a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					const hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>
