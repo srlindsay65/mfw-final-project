@@ -1,6 +1,6 @@
 Skip to content
- 
-Search or jump to…
+
+Search or jump toï¿½
 
 Pull requests
 Issues
@@ -15,7 +15,7 @@ mfw-restaurante/css/styles.css
 cf655d8  2 days ago
 @benreckas benreckas Finished story and review
 @benreckas @rockygg
-     
+
 182 lines (148 sloc)  2.66 KB
 /* Imports */
 
@@ -198,16 +198,3 @@ header {
 #contact {
   background: dodgerblue;
 }
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
