@@ -18,18 +18,15 @@
 				</div>
 				<nav id="navbar-scroll" class="navbar pull-right">
 					<ul class="nav nav-pills" role="tablist">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#blog">Blog</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
 						<li><a href="#menu">Menu</a></li>
-						<li><a href="#contact">Contact Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
 				</nav>
 			</header>
-		</div>
-	</div>
-
-
-	<div id="menu" class="row">  <!-- menu start-->
+		</div>  <!--home end-->
+		<div id="menu" class="row">  <!-- menu start-->
 			<div class="col-md-10 col-sm-10 col-xs-10 tab-container">
 				<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
@@ -38,7 +35,8 @@
 						<li role="presentation"><a href="#fries" aria-controls="fries" role="tab" data-toggle="tab">Street Fries</a></li>
 						<li role="presentation"><a href="#burgers" aria-controls="burgers" role="tab" data-toggle="tab">Burgers</a></li>
 						<li role="presentation"><a href="#sandwiches" aria-controls="sandwiches" role="tab" data-toggle="tab">Sandwiches</a></li>
-							<li role="presentation"><a href="#wraps" aria-controls="wraps" role="tab" data-toggle="tab">Wraps</a></li>
+						<li role="presentation"><a href="#wraps" aria-controls="wraps" role="tab" data-toggle="tab">Wraps</a></li>
+						<li role="presentation"><a href="#kids" aria-controls="kids" role="tab" data-toggle="tab">Kids</a></li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -59,6 +57,10 @@
 							<div class="col-sm-3">
 								<h3>Beer Battered Onion Wings - $5</h3>
 								<p>Hand cut, hand battered, and made to order.</p>
+							</div>
+							<div class="col-sm-3">
+								<h3>Chicken Tenders - $5</h3>
+								<p>Order them on their own, or add them to a meal.</p>
 							</div>
 							<div class="col-sm-3">
 								<h3>Fried Pickles - $3.5</h3>
@@ -154,7 +156,7 @@
 							</div>
 							<div class="col-sm-3">
 								<h3>Buffalo Chicken - $9</h3>
-								<p>Deep fried chicken breast, bleu cheese, onion straws, lettuce, tomato, ranch, and mayo on a buttery brioche bun.</p>
+								<p>Deep fried chicken breast, bacon, bleu cheese, onion straws, lettuce, tomato, ranch, and mayo on a buttery brioche bun.</p>
 							</div>
 							<div class="col-sm-3">
 								<h3>Chicago Pastrami - $10</h3>
@@ -187,9 +189,37 @@
 								<p>Breaded chicken breast, bleu cheese, onion straws, lettuce, tomato, and ranch dressing.</p>
 							</div>
 						</div>
+						<div role="tabpanel" class="tab-pane" id="kids">
+							<div class="col-sm-3">
+								<h3>Kids Menu Items</h3>
+								<p>All kids menu items are served with fries and a drink. This menu is available for our guests who are 12 and under.</p>
+							</div>
+							<div class="col-sm-3">
+								<h3>Cheeseburger - $5</h3>
+								<p>Cheeseburger with all the regular fixings. Or not. You choose.</p>
+							</div>
+							<div class="col-sm-3">
+								<h3>Chicken Tenders - $4</h3>
+								<p>Chicken tenders and fries? Yes please.</p>
+							</div>
+							<div class="col-sm-3">
+								<h3>Grilled Cheese - $4</h3>
+								<p>A simple classic, done the Bulldog way.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>  <!--menu end-->
+			<div id="footer" class="row">  <!--footer start-->
+				<div class="col-md-10 col-sm-10 col-xs-10 footer-container">
+					<div>
+						<a href="https://www.facebook.com/Bulldogburgerjoint/" target="_blank"><span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span></a>
+						<a href="https://www.instagram.com/BulldogBurgerJoint/" target="_blank"><span class="fa fa-instagram fa-3x" aria-hidden="true"></span></a>
+						<p class="footer-text">&copy; 2018 OCS Food Group, Inc. All Rights Reserved</p>
+					</div>
+				</div>
+			</div> <!--footer end-->
+		</div>
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -216,6 +246,10 @@
 				$(this).tab('show')
 			})
 			$('a[href="#wraps"]').click(function (e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+			$('a[href="#kids"]').click(function (e) {
 				e.preventDefault()
 				$(this).tab('show')
 			})

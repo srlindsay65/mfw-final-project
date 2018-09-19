@@ -16,10 +16,9 @@
 
 .section-container {
   margin-top: 225px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   text-align: center;
   background: var(--bulldogwhite);
-  /* border-radius: 20%; */
 }
 
 .section-header {
@@ -83,14 +82,14 @@ header {
 }
 
 #carousel-example-generic {
-  margin-top: 155px;
+  margin-top: 115px;
 }
 
 .carousel-inner > .item > img {
   width: 100%;
 }
 
-#blog, #menu, #contact {
+#blog, #menu, #contact, #footer {
   background: var(--bulldogred);
   display: flex;
   align-items: center;
@@ -99,7 +98,7 @@ header {
 
 #menu {
   flex-direction: column;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
 .container-border::before {
@@ -119,6 +118,7 @@ header {
 .blog-button-holder {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .blog-button {
@@ -147,7 +147,7 @@ header {
 
 .tab-content {
   background: var(--bulldogwhite);
-  height: 550px;
+  height: 640px;
 }
 
 .tab-pane {
@@ -155,11 +155,27 @@ header {
 }
 
 .tab-pane > div {
-  height: 260px;
+  height: 245px;
 }
 
 .nav-tabs {
   font-size: 20px;
+}
+
+.footer-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: var(--bulldogwhite);
+}
+
+@media screen and (max-width: 813px) {
+  .tab-content {
+    height: 720px;
+  }
+  .tab-pane > div {
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -179,5 +195,10 @@ header {
   .nav-pills > li > a {
     padding: 5px;
   }
+}
 
+@media screen and (max-width: 340px) {
+  .nav-pills > li > a {
+    padding: 1px;
+  }
 }
