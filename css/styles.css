@@ -19,7 +19,7 @@
   margin-bottom: 100px;
   text-align: center;
   background: var(--bulldogwhite);
-  border-radius: 20%;
+  /* border-radius: 20%; */
 }
 
 .section-header {
@@ -86,7 +86,7 @@ header {
   margin-top: 155px;
 }
 
-.carousel-inner > .item > .img {
+.carousel-inner > .item > img {
   width: 100%;
 }
 
@@ -95,6 +95,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#menu {
+  flex-direction: column;
+  padding: 50px 0;
 }
 
 .container-border::before {
@@ -111,6 +116,11 @@ header {
   text-align: center;
 }
 
+.blog-button-holder {
+  display: flex;
+  justify-content: center;
+}
+
 .blog-button {
   background-color: var(--bulldogred);
   color: var(--bulldogwhite);
@@ -123,52 +133,51 @@ header {
   font-size: 20px;
 }
 
+.tab-container {
+  margin-top: 150px;
+}
+
+.tab-container a {
+  color: var(--bulldogwhite);
+}
+
+.tab-container a:hover {
+  color: var(--bulldogblack);
+}
+
+.tab-content {
+  background: var(--bulldogwhite);
+  height: 550px;
+}
+
+.tab-pane {
+  padding: 20px 0;
+}
+
+.tab-pane > div {
+  height: 260px;
+}
+
+.nav-tabs {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-content {
+    height: 100%;
+  }
+  .tab-pane > div {
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   header {
     flex-direction: column;
     height: 175px;
   }
+  .nav-pills > li > a {
+    padding: 5px;
+  }
+
 }
-
-/*this is the test section for the grid*/
-
-/* h1 {
-  margin: 10px 20px 0;
-  border-bottom: 2px solid black;
-} */
-
-section {
-  margin: 10px 20px 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  min-width: 0;
-  width: auto;
-}
-
-article {
-  order: 999999;
-  min-width: 150px;
-  max-width: 19vw;
-  min-height: 200px;
-  flex: 1 1 23vw;
-  /* border: 1px solid black; */
-  padding: 20px 2vw;
-  margin: 0 0 20px 0;
-}
-
-/* &.filler {
-  order: 9999999;
-  border-color: transparent;
-  min-height: 0;
-  height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-header {
-  font-size: 2em;
-  font-weight: bold;
-} */
