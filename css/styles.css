@@ -167,6 +167,7 @@ header {
   margin-bottom: 50px;
   text-align: center;
   background: var(--bulldogwhite);
+  padding: 5px;
 }
 
 @media screen and (max-width: 813px) {
